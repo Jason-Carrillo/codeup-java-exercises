@@ -40,6 +40,12 @@ public class ConsoleExercises {
 
         System.out.println((number * 2) + (number2 *2));
 
+        int iLength = scanner.nextInt();
+
+        int iWidth = scanner.nextInt();
+
+        System.out.println((iLength * 2) + (iWidth *2));
+
 
     }
 }
