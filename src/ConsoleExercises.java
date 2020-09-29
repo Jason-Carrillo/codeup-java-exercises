@@ -25,9 +25,13 @@ public class ConsoleExercises {
 //        System.out.println(word2);
 //        System.out.println(word3);
 
-        String sentence = scanner.nextLine();
+//        String sentence = scanner.nextLine();
+//
+//        System.out.println(sentence);
 
-        System.out.println(sentence);
+        int length = scanner.nextInt();
+        int width = scanner.nextInt();
 
+        System.out.println((length + width) * 2);
     }
 }
