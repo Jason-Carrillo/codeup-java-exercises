@@ -39,5 +39,7 @@ public class ConsoleExercises {
         int number2 = parseInt(width);
 
         System.out.println((number * 2) + (number2 *2));
+
+
     }
 }
