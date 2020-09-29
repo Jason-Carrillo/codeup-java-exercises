@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import static java.lang.Integer.parseInt;
+
 public class ConsoleExercises {
     public static void main(String[] args) {
 
@@ -29,9 +31,13 @@ public class ConsoleExercises {
 //
 //        System.out.println(sentence);
 
-        int length = scanner.nextInt();
-        int width = scanner.nextInt();
+        String length = scanner.nextLine();
+        String width = scanner.nextLine();
 
-        System.out.println((length + width) * 2);
+        int number  = parseInt(length);
+
+        int number2 = parseInt(width);
+
+        System.out.println((number * 2) + (number2 *2));
     }
 }
