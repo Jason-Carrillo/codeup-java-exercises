@@ -47,7 +47,33 @@ public class ControlFlowExercises {
             System.out.println("y = " + y);
         }
 
-        for(long a = 2; a <= 1000000; a *= a)
+        for(long a = 2; a <= 1000000; a *= a) {
             System.out.println("a = " + a);
+        }
+
+        for(int b = 1; b <= 100; b++){
+            if(b % 3 == 0 ){
+                if (b % 5 == 0) {
+                    System.out.println("FizzBuzz");
+                }
+                System.out.println("fizz");
+                continue;
+            } else if (b % 5 == 0) {
+                System.out.println("Buzz");
+                continue;
+            }
+            System.out.println("b = " + b);
+
+        }
+
+
+
+
+
+
+
+
+
+        // main closing tags
     }
 }
