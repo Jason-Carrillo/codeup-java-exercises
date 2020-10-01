@@ -10,11 +10,20 @@ public class ControlFlowExercises {
 
         int x = 0;
 
+        int y = 100;
+
         do {
             System.out.println("x = " + x);
             x += 2;
         } while (
                 x <= 100
+        );
+
+        do {
+            System.out.println("y = " + y);
+            y -= 5;
+        } while (
+                y >= -10
         );
 
 
