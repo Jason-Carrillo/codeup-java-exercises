@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlowExercises {
     public static void main(String[] args) {
 
@@ -65,6 +67,12 @@ public class ControlFlowExercises {
             System.out.println("b = " + b);
 
         }
+
+        Scanner scanner = new Scanner(System.in);
+
+        int number = scanner.nextInt();
+
+        System.out.println(number);
 
 
 
