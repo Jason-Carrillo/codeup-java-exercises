@@ -43,7 +43,11 @@ public class ControlFlowExercises {
             System.out.println("x = " + x);
         }
 
-        for(int y = 100; y >= 0; y -= 2)
+        for(int y = 100; y >= 0; y -= 2) {
             System.out.println("y = " + y);
+        }
+
+        for(long a = 2; a <= 1000000; a *= a)
+            System.out.println("a = " + a);
     }
 }
