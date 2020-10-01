@@ -3,39 +3,39 @@ import java.util.Scanner;
 public class ControlFlowExercises {
     public static void main(String[] args) {
 
-//        int i = 5;
-//
-//        int x = 0;
-//
-//        int y = 100;
-//
-//        long a = 2;
+        int i = 5;
 
-//        while (i <= 15){
-//            System.out.println("i = " + i);
-//            i++;
-//        }
+        int x = 0;
 
-//        do {
-//            System.out.println("x = " + x);
-//            x += 2;
-//        } while (
-//                x <= 100
-//        );
-//
-//        do {
-//            System.out.println("y = " + y);
-//            y -= 5;
-//        } while (
-//                y >= -10
-//        );
-//
-//        do {
-//            System.out.println("a = " + a);
-//            a *= a ;
-//        } while (
-//                a <= 1000000
-//        );
+        int y = 100;
+
+        long a = 2;
+
+        while (i <= 15){
+            System.out.println("i = " + i);
+            i++;
+        }
+
+        do {
+            System.out.println("x = " + x);
+            x += 2;
+        } while (
+                x <= 100
+        );
+
+        do {
+            System.out.println("y = " + y);
+            y -= 5;
+        } while (
+                y >= -10
+        );
+
+        do {
+            System.out.println("a = " + a);
+            a *= a ;
+        } while (
+                a <= 1000000
+        );
 
         for(int i = 5; i <= 15; i++){
             System.out.println("i = " + i);
@@ -81,33 +81,37 @@ public class ControlFlowExercises {
         for(int i = 1; i <= number; i++ ){
             System.out.println(i + "      |" + i*i + "        |" + i*i*i );
             if (i == number){
-                System.out.println("Woud you like to continue? [Yes/No]");
-                String confirm = scanner.next();
 
-                boolean accept = confirm.equalsIgnoreCase("YeS");
             }
         }
+
+        System.out.println("Woud you like to continue? [Yes/No]");
+        String confirm = scanner.next();
 
         System.out.println("Please pick a number from 0 to 100");
         int userNumber = scanner.nextInt();
 
+        boolean accept = confirm.equalsIgnoreCase("YeS");
 
-
-        if (userNumber > 88) {
-            System.out.println("A");
-            System.out.println("Would you like to continue? [Yes/No]");
-        } else if (userNumber > 80) {
-            System.out.println("B");
-            System.out.println("Would you like to continue? [Yes/No]");
-        } else if (userNumber > 67) {
-            System.out.println("C");
-            System.out.println("Would you like to continue? [Yes/No]");
-        } else if (userNumber > 60) {
-            System.out.println("D");
-            System.out.println("Would you like to continue? [Yes/No]");
+        if(accept = true){
+            if (userNumber > 88) {
+                System.out.println("A");
+                System.out.println("Would you like to continue? [Yes/No]");
+            } else if (userNumber > 80) {
+                System.out.println("B");
+                System.out.println("Would you like to continue? [Yes/No]");
+            } else if (userNumber > 67) {
+                System.out.println("C");
+                System.out.println("Would you like to continue? [Yes/No]");
+            } else if (userNumber > 60) {
+                System.out.println("D");
+                System.out.println("Would you like to continue? [Yes/No]");
+            } else {
+                System.out.println("F");
+                System.out.println("Would you like to continue? [Yes/No]");
+            }
         } else {
-            System.out.println("F");
-            System.out.println("Would you like to continue? [Yes/No]");
+            System.out.println("Ok then");
         }
 
 
