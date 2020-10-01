@@ -72,7 +72,48 @@ public class ControlFlowExercises {
 
         int number = scanner.nextInt();
 
-        System.out.println(number);
+        System.out.println("what number would you like to go up to?" + number);
+
+        System.out.println("Number | Squared | Cubed");
+        System.out.println("------ | ------- | -----");
+
+
+        for(int i = 1; i <= number; i++ ){
+            System.out.println(i + "      |" + i*i + "        |" + i*i*i );
+            if (i == number){
+                System.out.println("Woud you like to continue? [Yes/No]");
+                String confirm = scanner.next();
+
+                boolean accept = confirm.equalsIgnoreCase("YeS");
+            }
+        }
+
+        System.out.println("Please pick a number from 0 to 100");
+        int userNumber = scanner.nextInt();
+
+
+
+        if (userNumber > 88) {
+            System.out.println("A");
+            System.out.println("Would you like to continue? [Yes/No]");
+        } else if (userNumber > 80) {
+            System.out.println("B");
+            System.out.println("Would you like to continue? [Yes/No]");
+        } else if (userNumber > 67) {
+            System.out.println("C");
+            System.out.println("Would you like to continue? [Yes/No]");
+        } else if (userNumber > 60) {
+            System.out.println("D");
+            System.out.println("Would you like to continue? [Yes/No]");
+        } else {
+            System.out.println("F");
+            System.out.println("Would you like to continue? [Yes/No]");
+        }
+
+
+
+
+
 
 
 
