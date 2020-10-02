@@ -8,9 +8,12 @@ public class StringExercise {
 
         String wind = "In windows, the main drive is usually C:\\";
         System.out.println(wind);
-//            In windows, the main drive is usually C:\
 
-//
+        String slash = "I can do backslashes \\," + "double backslashes \\\\,\n" +
+        "and the amazing triple backslash \\\\\\!";
+
+        System.out.println(slash);
+
 //        I can do backslashes \, double backslashes \\,
 //        and the amazing triple backslash \\\!
 
