@@ -37,35 +37,34 @@ public class ControlFlowExercises {
                 a <= 1000000
         );
 
-        for(int i = 5; i <= 15; i++){
-            System.out.println("i = " + i);
-        }
+//        for(int i = 5; i <= 15; i++){
+//            System.out.println("i = " + i);
+//        }
+//
+//        for(int x = 0; x <= 100; x += 2){
+//            System.out.println("x = " + x);
+//        }
+//
+//        for(int y = 100; y >= 0; y -= 2) {
+//            System.out.println("y = " + y);
+//        }
 
-        for(int x = 0; x <= 100; x += 2){
-            System.out.println("x = " + x);
-        }
-
-        for(int y = 100; y >= 0; y -= 2) {
-            System.out.println("y = " + y);
-        }
-
-        for(long a = 2; a <= 1000000; a *= a) {
-            System.out.println("a = " + a);
-        }
+//        for(long a = 2; a <= 1000000; a *= a) {
+//            System.out.println("a = " + a);
+//        }
 
         for(int b = 1; b <= 100; b++){
             if(b % 3 == 0 ){
                 if (b % 5 == 0) {
                     System.out.println("FizzBuzz");
+                    continue;
                 }
                 System.out.println("fizz");
                 continue;
             } else if (b % 5 == 0) {
                 System.out.println("Buzz");
                 continue;
-            }
-            System.out.println("b = " + b);
-
+            }System.out.println(b);
         }
 
         Scanner scanner = new Scanner(System.in);
@@ -78,11 +77,8 @@ public class ControlFlowExercises {
         System.out.println("------ | ------- | -----");
 
 
-        for(int i = 1; i <= number; i++ ){
-            System.out.println(i + "      |" + i*i + "        |" + i*i*i );
-            if (i == number){
-
-            }
+        for(int h = 1; h <= number; h++ ){
+            System.out.println(h + "      |" + h*h + "        |" + h*h*h );
         }
 
         System.out.println("Woud you like to continue? [Yes/No]");
