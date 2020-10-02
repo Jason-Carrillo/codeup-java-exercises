@@ -6,6 +6,7 @@ public class MethodsExercises {
         System.out.println("Subtraction(2, 3) = " + Subtraction(2, 3));
         System.out.println("Multiplication(4, 5) = " + Multiplication(4, 5));
         System.out.println("Division(5, 5) = " + Division(5, 5));
+        System.out.println("Modulus(1, 2) = " + Modulus(1, 2));
 
     }
 
@@ -22,4 +23,9 @@ public class MethodsExercises {
     public static int Division(int num, int num2){
         return num / num2;
     }
+
+    public static int Modulus(int num, int num2){
+        return num % num2;
+    }
+
 }
