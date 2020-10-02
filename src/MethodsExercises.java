@@ -1,6 +1,10 @@
+import java.util.Random;
 import java.util.Scanner;
+import java.lang.Math;
 
 public class MethodsExercises {
+    private static Object Random;
+
     public static void main(String[] args) {
 
 //        System.out.println("Addition(1, 2) = " + Addition(1, 2));
@@ -9,8 +13,8 @@ public class MethodsExercises {
 //        System.out.println("Division(5, 5) = " + Division(5, 5));
 //        System.out.println("Modulus(1, 2) = " + Modulus(1, 2));
 //        System.out.println("getInteger(1, 20) = " + getInteger(1, 20));
-        System.out.println("factorial() = " + factorial());
-
+//        System.out.println("factorial() = " + factorial());
+        System.out.println(Random);
 
 // END of main
     }
@@ -63,6 +67,14 @@ public class MethodsExercises {
             return result;
         }
     }
+
+//    public static int dice(){
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.println("Please enter a dice side amount");
+//
+//        int diceSides = scanner.nextInt();
+//
+//    }
 
 
 
