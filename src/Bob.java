@@ -11,9 +11,9 @@ public class Bob {
 
         if (userInput.equals("")){
             System.out.println("Bob: Fine. Be that way!");
-        } else if (userInput.charAt(userInput.length()-1) == '!'){
+        } else if (userInput.endsWith("!")){
             System.out.println("Bob: Whoa, chill out!");
-        } else if (userInput.charAt(userInput.length()-1) == '?'){
+        } else if (userInput.endsWith("?")){
         System.out.println(userInput.charAt(userInput.length()-1));
         System.out.println("Bob: Sure.");
         } else {
