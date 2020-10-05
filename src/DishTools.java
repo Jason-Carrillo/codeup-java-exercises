@@ -12,6 +12,7 @@ public class DishTools {
 
         System.out.println(shoutDishName("water"));
         System.out.println(analyzeDishCost(14000));
+        System.out.println(flipRecommendation(true));
 
     }
 
@@ -29,6 +30,10 @@ public class DishTools {
         } else {
             return "Average cost";
         }
+    }
+
+    public static boolean flipRecommendation(boolean value){
+        return !value;
     }
 
 }
