@@ -8,7 +8,7 @@ public class DishTest {
         dish1.nameOfDish = "Cold Oatmeal";
         dish1.wouldRecommend = false;
 
-        System.out.println(dish1.printSummary());
+        dish1.printSummary();
 
     }
 }
