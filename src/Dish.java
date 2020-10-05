@@ -1,6 +1,6 @@
 public class Dish {
     public static void main(String[] args) {
-        ;
+
 
     }
 
@@ -10,9 +10,7 @@ public class Dish {
 
     public Boolean wouldRecommend;
 
-    public void printSummary(){
-        System.out.println("Cost: " + costInCents + "\nName: " + nameOfDish + "\nRecommended: " + wouldRecommend);
-
-
+    public String printSummary(){
+       return "Cost: " + costInCents + "\nName: " + nameOfDish + "\nRecommended: " + wouldRecommend;
     }
 }
