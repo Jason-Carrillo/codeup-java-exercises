@@ -18,22 +18,22 @@ public class DishTools {
 
     public static int AVERAGE_COST_OF_DISH_IN_CENTS = 13000;
 
-    public static String shoutDishName(String x){
-        return x.toUpperCase();
+    public static void shoutDishName(String x){
+        System.out.println(x.toUpperCase());
     }
 
-    public static String analyzeDishCost(int dishCost){
+    public static void analyzeDishCost(int dishCost){
         if (dishCost > AVERAGE_COST_OF_DISH_IN_CENTS){
-            return "More expensive than average";
+            System.out.println("More expensive than average");
         } else if (dishCost < AVERAGE_COST_OF_DISH_IN_CENTS){
-            return "Less expensive than average";
+            System.out.println("Less expensive than average");
         } else {
-            return "Average cost";
+            System.out.println("Average cost");
         }
     }
 
-    public static boolean flipRecommendation(boolean value){
-        return !value;
+    public static void flipRecommendation(boolean value){
+        System.out.println(value = !value);
     }
 
 }
