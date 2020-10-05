@@ -12,5 +12,6 @@ public class Dish {
 
     public void printSummary(){
         System.out.println("Cost: " + costInCents + "\nName: " + nameOfDish + "\nRecommended: " + wouldRecommend);
+        System.out.printf("Cost: %d%nName: %s%nRecommended: %b", costInCents, nameOfDish, wouldRecommend);
     }
 }
