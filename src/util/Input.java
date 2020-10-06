@@ -12,6 +12,10 @@ public class Input {
     public int getInt(){
         return this.scanner.nextInt();
     }
+    public double getDouble(){
+        return this.scanner.nextInt();
+    }
+
 
     public boolean yesNo(){
         System.out.println("Would you like to conitnue? Yes/No");
@@ -28,6 +32,17 @@ public class Input {
 
         if (input < min || input > max){
             getInt(min, max);
+        }
+        return input;
+    }
+
+    double getDouble(double min, double max){
+        System.out.printf("Enter a number between %d, and %d", min, max);
+
+        double input = this.getDouble();
+
+        if (input < min || input > max){
+            getDouble(min, max);
         }
         return input;
     }
