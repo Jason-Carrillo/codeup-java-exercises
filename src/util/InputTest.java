@@ -17,6 +17,7 @@ public class InputTest {
 //        test2.getInt();
 
         System.out.println(test.getInt(10, 20));
+        System.out.println(test.getDouble(10000, 20000));
 
     }
 }

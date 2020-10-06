@@ -45,9 +45,11 @@ public class Input {
     }
 
     double getDouble(double min, double max){
-        System.out.printf("Enter a number between %d, and %d", min, max);
+        System.out.printf("Enter a number between %s, and %s", min, max);
 
-        double input = this.getDouble();
+        String num = scanner.nextLine();
+
+        double input = Double.parseDouble(num);
 
         if (input < min || input > max){
             getDouble(min, max);
