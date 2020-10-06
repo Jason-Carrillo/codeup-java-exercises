@@ -44,7 +44,7 @@ public class Input {
         return input;
     }
 
-    double getDouble(double min, double max){
+    public double getDouble(double min, double max){
         System.out.printf("Enter a number between %s, and %s", min, max);
 
         String num = scanner.nextLine();
