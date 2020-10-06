@@ -10,9 +10,9 @@ public class DishTools {
 //        - flipRecommendation() - that takes in a Dish object and reverses the wouldRecommend boolean value
 //        Try out the DishTools methods with Dish objects in the DishTest main method
 
-        System.out.println(shoutDishName("water"));
-        System.out.println(analyzeDishCost(14000));
-        System.out.println(flipRecommendation(true));
+//        System.out.println(shoutDishName("water"));
+//        System.out.println(analyzeDishCost(14000));
+//        System.out.println(flipRecommendation(true));
 
     }
 
