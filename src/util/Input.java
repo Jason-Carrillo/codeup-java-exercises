@@ -5,22 +5,28 @@ import java.util.Scanner;
 public class Input {
     private Scanner scanner;
 
+    public Input(){
+        this.scanner = new Scanner(System.in);
+    }
+
     public String getString(){
         return this.scanner.nextLine();
     }
 
     public int getInt(){
+
         return this.scanner.nextInt();
     }
     public double getDouble(){
+
         return this.scanner.nextInt();
     }
 
 
     public boolean yesNo(){
-        System.out.println("Would you like to conitnue? Yes/No");
+        System.out.println("Would you like to continue? Yes/No");
 
-        String input = this.getString();
+        String input = this.scanner.nextLine();
 
         return input.equalsIgnoreCase("yes");
     }
@@ -46,6 +52,10 @@ public class Input {
         }
         return input;
     }
+
+
+
+
 
 
 //    END of class
