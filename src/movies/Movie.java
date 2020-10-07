@@ -1,11 +1,11 @@
 package movies;
 public class Movie {
-    private String name;
-    private String category;
+    final private String name;
+    final private String category;
 
     public Movie(String movieName, String movieCategory) {
         name = movieName;
-        category = movieName;
+        category = movieCategory;
     }
 
     public String getMovie() {
