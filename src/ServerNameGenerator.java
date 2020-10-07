@@ -5,7 +5,7 @@ public class ServerNameGenerator {
 
         String[] nouns = {"Texas", "Arizona", "Mall", "Jail", "Belt", "Line", "Boat", "Fish", "Planet", "Plants"};
 
-//        System.out.println(Math.round(Math.random() * 10));
+        System.out.println("Here is an random adjective, and noun from the lists\n");
         System.out.println(randomizer(adjectives, nouns));
 
 //        END of main
@@ -16,7 +16,7 @@ public class ServerNameGenerator {
         String adj = adjectives[(int) Math.round(Math.random() * 10)];
         String noun = nouns[(int) Math.round(Math.random() * 10)];
 
-        return adj + " " + noun;
+        return adj + "-" + noun;
     }
 
 }
