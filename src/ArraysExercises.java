@@ -6,12 +6,27 @@ public class ArraysExercises {
 //        System.out.println(Arrays.toString(numbers));
 
         String[] persons = {"Bon", "Bob", "Joe"};
+        String[] newPerson = Arrays.copyOf(persons, persons.length + 1);
 
 
         for(String person: persons) {
             System.out.println(person);
         }
 
+        newPerson[newPerson.length - 1] = "Sam";
+        System.out.println("newPerson = " + Arrays.toString(newPerson));
 
+
+
+
+
+//        END of Main
     }
+
+
+//    public static String addName(name){
+//
+//        return newPerson[3] = name;
+//    }
+
 }
