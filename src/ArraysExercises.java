@@ -15,6 +15,7 @@ public class ArraysExercises {
 
         newPerson[newPerson.length - 1] = "Sam";
         System.out.println("newPerson = " + Arrays.toString(newPerson));
+        System.out.println(addName(persons, "Jae"));
 
 
 
@@ -24,9 +25,11 @@ public class ArraysExercises {
     }
 
 
-//    public static String addName(name){
-//
-//        return newPerson[3] = name;
-//    }
+    public static String addName(String Person[], String newPerson ){
+        String[] newArray = Arrays.copyOf(Person, Person.length + 1);
+        newArray[newArray.length-1] = newPerson;
+
+        return Arrays.toString(newArray);
+    }
 
 }
