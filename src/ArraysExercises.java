@@ -16,7 +16,7 @@ public class ArraysExercises {
         }
 
 //        String[] persons = {"Bon", "Bob", "Joe"};
-//        String[] newPerson = Arrays.copyOf(persons, persons.length + 1);
+//        String[] newPerson = Arrays.copyOf(allPeople, allPeople.length + 1);
 //
 //
 //        for(String person: persons) {
@@ -25,7 +25,7 @@ public class ArraysExercises {
 //
 //        newPerson[newPerson.length - 1] = "Sam";
 //        System.out.println("newPerson = " + Arrays.toString(newPerson));
-//        System.out.println(addName(persons, "Jae"));
+//        System.out.println(addName(allPeople, "Jae"));
 
 
 
@@ -35,11 +35,11 @@ public class ArraysExercises {
     }
 
 
-//    public static String addName(String Person[], String newPerson ){
-//        String[] newArray = Arrays.copyOf(Person, Person.length + 1);
-//        newArray[newArray.length-1] = newPerson;
-//
-//        return Arrays.toString(newArray);
-//    }
+    public static Person[] addName(Person[] originalArray, Person personToAdd){
+        Person[] newArray = Arrays.copyOf(originalArray, originalArray.length + 1);
+        newArray[newArray.length-1] = personToAdd;
+
+        return newArray;
+    }
 
 }
