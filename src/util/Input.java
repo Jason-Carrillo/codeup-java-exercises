@@ -3,7 +3,7 @@ package util;
 import java.util.Scanner;
 
 public class Input {
-    private Scanner scanner;
+    public Scanner scanner;
 
     public Input(){
 
@@ -32,7 +32,7 @@ public class Input {
         return input.equalsIgnoreCase("yes");
     }
 
-    int getInt(int min, int max){
+    public int getInt(int min, int max){
         System.out.printf("Enter a number between %d, and %d", min, max);
 
         String num = scanner.nextLine();
