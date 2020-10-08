@@ -18,7 +18,7 @@ public class Rectangle {
     }
 
     public int getPerimeter(int length, int width){
-        return this.length * this.width;
+        return length * width;
     }
 
 }
