@@ -33,10 +33,40 @@ public class MoviesApplication {
                 }
                 break;
             case 2:
+                System.out.println("view movies in animated category");
+                for (Movie movie: movies){
+                    if(movie.getCategory().equalsIgnoreCase("animated")){
+                    System.out.println(movie.getName() + "--" + movie.getCategory());
+                    }
+                }
+                break;
+            case 3:
+                System.out.println("view movies in drama category");
+                for (Movie movie: movies){
+                    if(movie.getCategory().equalsIgnoreCase("drama")){
+                        System.out.println(movie.getName() + "--" + movie.getCategory());
+                    }
+                }
+                break;
+            case 4:
+                System.out.println("view movies in horror category");
+                for (Movie movie: movies){
+                    if(movie.getCategory().equalsIgnoreCase("horror")){
+                        System.out.println(movie.getName() + "--" + movie.getCategory());
+                    }
+                }
+                break;
+            case 5:
+                System.out.println("view movies in scifi category");
+                for (Movie movie: movies){
+                    if(movie.getCategory().equalsIgnoreCase("scifi")){
+                        System.out.println(movie.getName() + "--" + movie.getCategory());
+                    }
+                }
+                break;
+
+
         }
-
-
     }
-
 
 }
