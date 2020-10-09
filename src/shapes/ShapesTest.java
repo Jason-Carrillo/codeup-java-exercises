@@ -14,6 +14,7 @@ public class ShapesTest {
         Measurable myShape = new Square(5);
 
         System.out.println(myShape.getArea());
+        System.out.println(myShape.getPerimeter());
 
 
 
