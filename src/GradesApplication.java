@@ -4,8 +4,10 @@ import java.util.Scanner;
 public class GradesApplication {
     public static void main(String[] args) {
         HashMap<String, Student> students = new HashMap<>();
+
         Scanner scanner = new Scanner(System.in);
         boolean userCont = true;
+
 
 
         students.putIfAbsent("student1", new Student("Sam"));
@@ -17,17 +19,38 @@ public class GradesApplication {
         students.get("student1").addGrade(100);
         students.get("student1").addGrade(100);
 
+        students.get("student1").recordAttendance("2017-10-02", "A");
+        students.get("student1").recordAttendance("2017-10-02", "P");
+        students.get("student1").recordAttendance("2017-10-02", "P");
+        students.get("student1").recordAttendance("2017-10-02", "P");
+
+
         students.get("student2").addGrade(99);
         students.get("student2").addGrade(99);
         students.get("student2").addGrade(100);
+
+        students.get("student1").recordAttendance("2017-10-02", "P");
+        students.get("student1").recordAttendance("2017-10-02", "P");
+        students.get("student1").recordAttendance("2017-10-02", "P");
+        students.get("student1").recordAttendance("2017-10-02", "P");
 
         students.get("student3").addGrade(20);
         students.get("student3").addGrade(70);
         students.get("student3").addGrade(50);
 
+        students.get("student1").recordAttendance("2017-10-02", "A");
+        students.get("student1").recordAttendance("2017-10-02", "P");
+        students.get("student1").recordAttendance("2017-10-02", "A");
+        students.get("student1").recordAttendance("2017-10-02", "P");
+
         students.get("student4").addGrade(70);
         students.get("student4").addGrade(80);
         students.get("student4").addGrade(90);
+
+        students.get("student1").recordAttendance("2017-10-02", "P");
+        students.get("student1").recordAttendance("2017-10-02", "P");
+        students.get("student1").recordAttendance("2017-10-02", "A");
+        students.get("student1").recordAttendance("2017-10-02", "P");
 
 
         while(userCont){

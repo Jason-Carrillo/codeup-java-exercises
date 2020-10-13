@@ -1,9 +1,10 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Student {
     private final String name;
     private final ArrayList<Integer> grade;
-    public boolean isTrue = true;
+    private final HashMap<String, String> att;
 
     public static void main(String[] args) {
         Student Joe = new Student("Joe");
@@ -25,6 +26,7 @@ public class Student {
     public Student(String studentName){
         this.name = studentName;
         this.grade = new ArrayList<>();
+        this.att = new HashMap<>();
     }
 
     public String getName(){
@@ -45,5 +47,11 @@ public class Student {
 
         return Math.round(gradeAverage * 100)/100.0;
     }
+
+    public void recordAttendance(String date, String value){
+        this.att.put(date, value);
+    }
+
+
 
 }
