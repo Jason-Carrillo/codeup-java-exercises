@@ -3,6 +3,7 @@ import java.util.ArrayList;
 public class Student {
     private final String name;
     private final ArrayList<Integer> grade;
+    public boolean isTrue = true;
 
     public static void main(String[] args) {
         Student Joe = new Student("Joe");
