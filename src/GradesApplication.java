@@ -7,18 +7,24 @@ public class GradesApplication {
         students.putIfAbsent("student1", new Student("Sam"));
         students.putIfAbsent("student2", new Student("Joe"));
         students.putIfAbsent("student3", new Student("Bill"));
+        students.putIfAbsent("student4", new Student("Ted"));
 
         students.get("student1").addGrade(20);
         students.get("student1").addGrade(100);
         students.get("student1").addGrade(100);
 
         students.get("student2").addGrade(99);
-        students.get("student2").addGrade(100);
+        students.get("student2").addGrade(99);
         students.get("student2").addGrade(100);
 
         students.get("student3").addGrade(20);
         students.get("student3").addGrade(70);
         students.get("student3").addGrade(50);
+
+        students.get("student4").addGrade(70);
+        students.get("student4").addGrade(80);
+        students.get("student4").addGrade(90);
+
 
         System.out.print(students.get("student1").getName()+"'s grade average is: ");
         System.out.println(students.get("student1").getGradeAverage());
@@ -26,6 +32,8 @@ public class GradesApplication {
         System.out.println(students.get("student2").getGradeAverage());
         System.out.print(students.get("student3").getName()+"'s grade average is: ");
         System.out.println(students.get("student3").getGradeAverage());
+        System.out.print(students.get("student4").getName()+"'s grade average is: ");
+        System.out.println(students.get("student4").getGradeAverage());
 
     }
 }
