@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
 public class Student {
-    private String name;
-    private ArrayList<Integer> grade = new ArrayList<>();
+    private final String name;
+    private final ArrayList<Integer> grade;
 
     public static void main(String[] args) {
         Student Joe = new Student("Joe");
@@ -23,6 +23,7 @@ public class Student {
 
     public Student(String studentName){
         this.name = studentName;
+        this.grade = new ArrayList<>();
     }
 
     public String getName(){
@@ -38,7 +39,10 @@ public class Student {
         for (Integer number: grade){
              totalGrade += number;
         }
-        return totalGrade/grade.size();
+
+        double gradeAverage = totalGrade/grade.size();
+
+        return Math.round(gradeAverage * 100)/100.0;
     }
 
 }
