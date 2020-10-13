@@ -30,10 +30,12 @@ public class GradesApplication {
         students.get("student4").addGrade(90);
 
 
-
-
         while(userCont){
             System.out.println("Please enter a student");
+            System.out.println("Student1 = Sam");
+            System.out.println("Student2 = Joe");
+            System.out.println("Student3 = Bill");
+            System.out.println("Student4 = Ted");
             String userInput = scanner.nextLine();
 
             if(userInput.contains("1")){
@@ -57,6 +59,7 @@ public class GradesApplication {
             System.out.println("Would you like to search for another student? y/n");
             String confirm = scanner.nextLine();
             if (!confirm.equalsIgnoreCase("y")){
+                System.out.println("Thanks for checking :D");
                 userCont = false;
             }
         }
