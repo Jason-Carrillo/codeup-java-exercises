@@ -4,9 +4,25 @@ public class Student {
     private String name;
     private ArrayList<Integer> grade = new ArrayList<>();
 
-    public Student(String studentName, int studentGrade){
+    public static void main(String[] args) {
+        Student Joe = new Student("Joe");
+
+        Joe.addGrade(90);
+        Joe.addGrade(70);
+        Joe.addGrade(60);
+        Joe.addGrade(100);
+        Joe.addGrade(100);
+
+        System.out.println(Joe.getName());
+        System.out.println(Joe.grade);
+
+        System.out.println(Joe.getGradeAverage());
+
+
+    }
+
+    public Student(String studentName){
         this.name = studentName;
-        grade.add(studentGrade);
     }
 
     public String getName(){
