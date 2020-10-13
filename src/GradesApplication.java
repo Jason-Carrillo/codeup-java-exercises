@@ -5,6 +5,7 @@ public class GradesApplication {
     public static void main(String[] args) {
         HashMap<String, Student> students = new HashMap<>();
         Scanner scanner = new Scanner(System.in);
+        boolean userCont = true;
 
 
         students.putIfAbsent("student1", new Student("Sam"));
@@ -29,7 +30,7 @@ public class GradesApplication {
         students.get("student4").addGrade(90);
 
 
-        boolean userCont = true;
+
 
         while(userCont){
             System.out.println("Please enter a student");
@@ -49,6 +50,8 @@ public class GradesApplication {
             } else if (userInput.contains("4")){
                 System.out.print(students.get("student4").getName()+"'s grade average is: ");
                 System.out.println(students.get("student4").getGradeAverage());
+            } else {
+                System.out.println("There is no student with these credentials registered");
             }
 
             System.out.println("Would you like to search for another student? y/n");
