@@ -5,8 +5,10 @@ public class InputTest {
 
         Input test = new Input();
 
-
+        test.getDouble(1, 5);
 
         //END of class
     }
+
+
 }

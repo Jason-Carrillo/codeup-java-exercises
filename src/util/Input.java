@@ -4,9 +4,6 @@ import java.util.Scanner;
 
 public class Input {
     public Scanner scanner;
-//    int intNum = Integer.valueOf(getString());
-//
-//    double doubleNum = Double.valueOf(getString());
 
     public Input(){
 
@@ -19,7 +16,10 @@ public class Input {
 
 
 
+
+
     public int getInt(){
+
 
         return this.scanner.nextInt();
     }
@@ -52,13 +52,19 @@ public class Input {
 
     public double getDouble(double min, double max){
         System.out.printf("Enter a number between %s, and %s", min, max);
-
         String num = getString();
 
         double input = Double.parseDouble(num);
+        try {
 
-        if (input < min || input > max){
+            if (input < min || input > max) {
+                getDouble(min, max);
+            }
+            return input;
+
+        } catch (ArithmeticException e) {
             getDouble(min, max);
+
         }
         return input;
     }
